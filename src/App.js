@@ -14,9 +14,9 @@ function App() {
   }
 
   return (
-    <div className='file'>
+    <div className='container'>
       <Files 
-        className = "files-dropzone"
+        className = "card"
         onChange = {handleChange}
         onError = {handleErrror}
         accepts = {['image/png', '.pdf', 'audio/*']}  // accepted files paterns regex
@@ -25,8 +25,9 @@ function App() {
         maxFileSize = {1000000}
         minFileSize = {0}
         >
-          Drop Files here or click to upload
+          <h2>Drop Files here or click to upload</h2>
         </Files>
+        
     </div>
   )
 }
