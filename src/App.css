@@ -1,21 +1,24 @@
 .container {
   width: 190px;
   height: 254px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .card {
   width: 190px;
   height: 254px;
   background: #07182E;
-  position: relative;
+  position: absolute;
   display: flex;
   place-content: center;
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
+  padding: 1rem;
+  top: 30%;
 }
 
 .card h2 {
